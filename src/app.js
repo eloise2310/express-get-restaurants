@@ -5,8 +5,11 @@ const db = require("../db/connection");
 
 //TODO: Create your GET Request Route Below: 
 
+const restaurantRouter = require("../routes/restaurants")
+
 app.use(express.json());
 app.use(express.urlencoded());
+app.use("/restaurants", restaurantRouter)
 
 app.get("/restaurants", async (request, response) => {
     const restaurants = await Restaurant.findAll({});
