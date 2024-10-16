@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const restaurantRouter = express.Router();
-const {Restaurant} = require("../models/Restaurant");
+const Restaurant = require("../models/Restaurant");
 const db = require('../db/connection');
 const { where } = require("sequelize");
 

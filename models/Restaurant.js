@@ -8,4 +8,4 @@ const Restaurant = db.define("restaurants", {
     cuisine: Sequelize.STRING
 })
 
-module.exports = {Restaurant};
+module.exports = Restaurant;

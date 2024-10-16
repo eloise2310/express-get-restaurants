@@ -1,6 +1,6 @@
 const request = require("supertest");
 const app = require("./src/app.js");
-const { Restaurant } = require("./models");
+const Restaurant = require("./models");
 const syncSeed = require("./seed.js");
 
 beforeAll(async () => {
