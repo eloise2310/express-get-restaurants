@@ -9,7 +9,7 @@ const restaurantRouter = require("../routes/restaurants")
 
 app.use(express.json());
 app.use(express.urlencoded());
-app.use("/restaurants", restaurantRouter)
+app.use("/restaurants", restaurantRouter) // restaurantRouter is a place holder (e.g. dropdown menu) for all restaurants to be stored
 
 // app.get("/restaurants", async (request, response) => {
 //     const restaurants = await Restaurant.findAll({});
